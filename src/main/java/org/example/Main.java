@@ -4,7 +4,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 import org.h2.command.dml.Insert;
 
 
@@ -23,9 +22,9 @@ public class Main {
         stmtC.close();
 
         Statement stmtInsert = conexao.createStatement();
-        String insertpessoas = "insert into pessoa(id, nome, qtdAcesso, naturalidade) values (1, 'João', 10, 'Brasileiro')";
+        String insertpessoas = "insert into pessoa(id, nome, qtdAcesso, naturalidade) values (1, ' Cleiton', 10, 'Brasileiro')";
         stmtInsert.executeUpdate(insertpessoas);
-        insertpessoas = "insert into pessoa(id, nome, qtdAcesso, naturalidade) values (2, 'Maria', 20, 'Brasileiro')";
+        insertpessoas = "insert into pessoa(id, nome, qtdAcesso, naturalidade) values (2, 'Cacu', 20, 'Brasileiro')";
         stmtInsert.executeUpdate(insertpessoas);
         insertpessoas = "insert into pessoa(id, nome, qtdAcesso, naturalidade) values (3, 'José', 30, 'Brasileiro')";
         stmtInsert.executeUpdate(insertpessoas);
